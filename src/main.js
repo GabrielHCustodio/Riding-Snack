@@ -1,10 +1,14 @@
 const myApp = ({
     data () {
         return {
-            titulo: "Hello World!!!"
+            inputTipoPao: '',
+            inputHamburguer: '',
+            inputSalada: [],
+            inputMolho: []
         }
     },
-    methods: {},
+    methods: {
+    },
     watch:{}
 })
 

@@ -27,10 +27,25 @@
                 <div class="col-md-6">
                     <div class="row mt-2">
                         <div class="col">
-                            <p>Pão</p>
-                            <p>Hamburguer</p>
-                            <p>Salada</p>
-                            <p>Molho</p>
+                            <h4>Seu pedido</h4>
+                            <div>
+                                <p>Pão selecionado</p>
+                                <p>{{ inputTipoPao }}</p>
+                            </div>
+
+                            <div>
+                                <p>Hamburguer</p>
+                                <p>{{ tipoHamburguer }}</p>
+                            </div>
+
+                            <div>
+                                <p>Salada</p>
+                                <p>{{ inputSalada }}</p>
+                            </div>
+
+                            <div>
+                                <p>Molho</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -43,17 +58,17 @@
                                 <div class="card-header">Tipo de pão</div>
                                 <div class="card-body">
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio">
+                                        <input class="form-check-input" type="radio" value="gergelin" v-model="inputTipoPao">
                                         <label class="form-check-label">Gergelin</label>
                                     </div>
 
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio">
+                                        <input class="form-check-input" type="radio" value="australiano" v-model="inputTipoPao">
                                         <label class="form-check-label">Australiano</label>
                                     </div>
 
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio">
+                                        <input class="form-check-input" type="radio" value="quatro-queijos" v-model="inputTipoPao">
                                         <label class="form-check-label">Quatro queijos</label>
                                     </div>
                                 </div>
@@ -68,17 +83,17 @@
                                 <div class="card-header">Tipo de Hamburguer</div>
                                 <div class="card-body">
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio">
+                                        <input class="form-check-input" type="radio" value="bovino" v-model="inputHamburguer">
                                         <label class="form-check-label">Bovino</label>
                                     </div>
 
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio">
+                                        <input class="form-check-input" type="radio" value="frango" v-model="inputHamburguer">
                                         <label class="form-check-label">Frango</label>
                                     </div>
 
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio">
+                                        <input class="form-check-input" type="radio" value="soja" v-model="inputHamburguer">
                                         <label class="form-check-label">Soja</label>
                                     </div>
                                 </div>
@@ -93,27 +108,27 @@
                                 <div class="card-header">Salada</div>
                                 <div class="card-body">
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="checkbox">
+                                        <input class="form-check-input" type="checkbox" value="alface" v-model="inputSalada">
                                         <label class="form-check-label">Alface</label>
                                     </div>
 
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="checkbox">
+                                        <input class="form-check-input" type="checkbox" value="tomate" v-model="inputSalada">
                                         <label class="form-check-label">Tomate</label>
                                     </div>
 
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="checkbox">
+                                        <input class="form-check-input" type="checkbox" value="cebola" v-model="inputSalada">
                                         <label class="form-check-label">Cebola</label>
                                     </div>
 
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="checkbox">
+                                        <input class="form-check-input" type="checkbox" value="picles" v-model="inputSalada">
                                         <label class="form-check-label">Picles</label>
                                     </div>
 
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="checkbox">
+                                        <input class="form-check-input" type="checkbox" value="azeitona" v-model="inputSalada">
                                         <label class="form-check-label">Azeitona</label>
                                     </div>
                                 </div>
@@ -128,17 +143,17 @@
                                 <div class="card-header">Molhos</div>
                                 <div class="card-body">
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="checkbox">
+                                        <input class="form-check-input" type="checkbox" value="barbecue" v-model="inputMolho">
                                         <label class="form-check-label">Barbecue</label>
                                     </div>
 
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="checkbox">
+                                        <input class="form-check-input" type="checkbox" value="Mostarda e mel" v-model="inputMolho">
                                         <label class="form-check-label">Mostarda e mel</label>
                                     </div>
 
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="checkbox">
+                                        <input class="form-check-input" type="checkbox" value="maionese" v-model="inputMolho">
                                         <label class="form-check-label">Maionese</label>
                                     </div>
 
