@@ -28,23 +28,28 @@
                     <div class="row mt-2">
                         <div class="col">
                             <h4>Seu pedido</h4>
-                            <div>
+                            <div class="mt-2">
                                 <p>Pão selecionado</p>
-                                <p>{{ inputTipoPao }}</p>
+                                <p> {{ inputTipoPao }} </p>
                             </div>
 
-                            <div>
-                                <p>Hamburguer</p>
-                                <p>{{ tipoHamburguer }}</p>
+                            <div class="mt-2">
+                                <p>Hamburguer selecionado</p>
+                                <p> {{ inputHamburguer}} </p>
                             </div>
 
-                            <div>
-                                <p>Salada</p>
-                                <p>{{ inputSalada }}</p>
+                            <div class="mt-2">
+                                <p>Salada selecionada</p>
+                                <ul>
+                                    <li v-for="salada in inputSalada">{{ salada }}</li>
+                                </ul>
                             </div>
 
-                            <div>
-                                <p>Molho</p>
+                            <div class="mt-2">
+                                <p>Molho selecionado</p>
+                                <ul>
+                                    <li v-for="molho in inputMolho">{{ molho }}</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
